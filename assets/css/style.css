@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+/* Conf. Página */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    width:100%;
+    min-height: 100vh;
+    background: #1E1E1E;
+    display: flex;
+
+    
+}
+
+/* Configuração das logos */
+#dnc{
+    position: absolute;
+    width: 130px;
+    height: 80px;
+    left: 20px;
+    top: 20px;
+}
+#jumpy{
+    position: absolute;
+    width: 290px;
+    height: 74px;
+    left: 490px;
+    top: 80px;  
+}
+
+/* Configuração do Bem-Vindo */
+.container h2{
+    position: absolute;
+    width: 312px;
+    height: 34px;
+    left: 480px;
+    top: 180px;
+    
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    
+    color: #FFFFFF;
+}
+
+/* Configuração dos Inputs  */
+.form{
+    margin-top: 40%;
+    padding: 15px;
+    display: grid;
+    
+    position: relative;
+    width: 100px;
+    height: 10px;
+    top: 240px;
+    left: 75px;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    line-height: 23px;
+}
+.form-control{
+    margin-top: 10px;
+    margin-bottom: 25px;
+    padding-bottom: 45px;
+    position: relative;
+    margin-left: -180px;
+}
+
+/* Configuração Nome, Email, Telefone, Cpf, Senha */
+.form-control label{
+    position: absolute;
+    width: 161px;
+    height: 23px;
+    left: 509px;
+    top: -78px;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 23px;
+
+    color: #FFFFFF;
+}
+/* Aparência dos inputs */
+.form-control input{
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 11px 13px;
+    gap: 8px;
+
+    position: absolute;
+    width: 450px;
+    height: 40px;
+    left: 506px;
+    top: -50px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #616161;
+    
+    background-color: rgba(255, 255, 255, 0.9); 
+    border-radius: 10px;  
+
+    flex: none;
+    order:0;
+    flex-grow: 0;
+}
+
+/* Aviso Campo Obrigatório */
+.form-control small{
+    position: absolute;
+    bottom: 0;
+    visibility: hidden;   
+    
+    width: 114px;
+    height: 14px;
+    left: 850px;
+    top:-5px;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400px;
+    font-size: 12px;
+    line-height: 14px;
+
+    color: #E73550; 
+}
+
+/* Configuração do Botão */
+.form button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 36px;
+    gap: 8px;
+
+    position: absolute;
+    
+    left: 340px;
+    top: 380px;    
+    
+    
+    background: #0C70F2;
+    border-radius: 6px;
+    border: none;
+}
+
+#margem{
+    border:1px solid #1E1E1E;
+    margin-top: 20px;
+}
+
+/* Configuração Aparência do Botão */
+.form button{
+    width: 450px;
+    height: 40px;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #FFFFFF;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+/* Sucesso e erro  */
+
+.form-control.error small {
+    visibility: visible;
+    color: red;
+}
+
+#sucesso{
+    color:green;
+    margin-left: 330px;
+    margin-top: 10px;
+    
+}
+
+#erro{
+    color: red;
+    margin-left: 330px;
+    width: 300px;
+}
